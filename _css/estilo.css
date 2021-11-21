@@ -1,0 +1,646 @@
+
+*{ /* To resentando meu site e aplicando o reset do margin e padding */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Propriedades do body */
+html,body{ 
+    height: 100%;
+    /* overflow-y: hidden; */
+    overflow-x: hidden; /* Não tem como deslizar a tela para as horizontais (só há conteúdo na vertical) */
+}
+
+/*Propriedade da linha de demarcação */
+hr{
+    border: 1px solid;
+}
+
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%; /*Pra não ficar grudado */
+}
+
+/* Classe do Cabeçalho */
+header{
+    height: 100px;
+    padding: 20px 0;
+    background-color: #223f8f;
+}
+
+/* Classe da logo */
+.logo{
+    width: 50%; /* Pra se afastar dos ícones do cabeçalho */ 
+}
+
+/* Classe Menu - Estiliza especificamente a área que fica os tópicos do cabeçalho */
+.menu{
+    padding-top: 30px; /* Pra os tópicos do cabeçalho ficarem mais alinhadas com a logo */
+    width: 50%;
+    text-align: right;
+}
+
+/* Classe p/ estilizar os tópicos que ficam no Menu */
+.menu a{
+    color: #FF4500;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;    
+    border-radius: 6px;
+}
+/*--------------------- FIM DA ESTILIZAÇÃO DO CABEÇALHO(HEADER) --------------------*/
+
+
+/* Classe Section p/ estilizar oq fica abaixo do cabeçalho: a home */
+section.home{
+    height: 500px;
+    position: relative;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    background-color: #223f8f;
+}
+
+/*Classe para estilizar a região direita da página: área do círculo */
+.extras{
+    position: absolute;
+    bottom: -200px;
+    right: -250px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: #212b46;;
+}
+
+/* Classe que estiliza minha foto no Home */
+.eu {
+    position: absolute;
+    right: 250px;
+    top: -130px;
+}
+
+/*Classe para estilizar a área por onde ficam os ícones das redes sociais */
+.social-media{
+    position: absolute;
+    right: 300px;
+    top: 30px;
+}
+
+/*Classe que estiliza propriamente os ícones das redes sociais*/
+.social-media img{
+    display: block; /* Faz com que os ícones fiquem cada um abaixo do outro */
+    width: 30px; /* Largura de cada ícone */
+    margin: 15px 0; /*Margem entre cada ícone */
+}
+
+
+
+/*Classe que estiliza a região central/esquerda da Home */
+.texto-home{
+    margin-top: 80px;
+    margin-left: -20px;
+}
+
+/* Classe que estiliza o "Título central" na Home*/
+.texto-home h1{
+    font-size: 80px;
+}
+
+.texto-home h2{
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+/* Classe que estiliza o "título" que pede para clicar no botão */
+.texto-home h6{
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+.seta img{
+    margin-top: -5px;
+    margin-left: 220px; 
+}
+
+.seta button a{
+    color: white;
+}
+
+/* Classe que estiliza o único botão da região dessa div*/
+.texto-home button{
+    border:0;
+    background-color: #131b31;;
+    border-radius: 10px;
+    width: 110px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: -110px;
+}
+
+/* Classe que estiliza oq está dentro do botão */
+.texto-home button p{
+    color:white;
+    font-size: 15px;
+}
+/*--------------------- FIM DA ESTILIZAÇÃO DA HOME --------------------*/
+
+
+/*Classe Section p/ estilizar oq fica abaixo da Home: Sobre */
+section.sobre{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    background-color: #FF4500;;
+}
+
+/* Classe que estiliza os elementos do Sobre */
+.texto-sobre{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+/* Classe que estiliza o título central */
+.texto-sobre h1{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 224);
+}
+
+/* Classe que estiliza o parágrafo da região dessa div */
+.texto-sobre p{
+    margin-top: 100px;
+    line-height: 1.8;
+    color:black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 600px;
+    max-width: 450px; /*Pra não estrapolar no tamanho da linha*/    
+}
+
+/* Classe que estiliza a tag h4 da div sobre */
+.texto-sobre h4{
+    margin-top: 20px;
+    line-height: 1.8;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 600px;
+    max-width: 450px;
+}
+
+/* Classe que estiliza a minha imagem no Sobre */
+img#eu9{
+    width: 400px;
+    margin-top: -250px;
+    margin-left: 100px;
+    border-radius: 2px;
+}
+
+img#neuro{
+    width: 125px;
+    margin-left: 650px;    
+}
+
+img#unicap{
+    width: 100px;
+    margin-left: 830px; 
+    margin-top: -300px; 
+    margin-bottom: 30px;
+}
+/*--------------------- FIM DA ESTILIZAÇÃO DO SOBRE --------------------*/
+
+
+
+/*Classe Section p/ estilizar oq fica abaixo da Sobre: Skills */
+section.skills{
+    width: 100%;
+    height: 380px;
+    position: relative;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    background-color: #223f8f;
+}
+
+.texto-skills{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.texto-skills h1{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 224);
+    
+}
+
+.texto-skills h3{
+    color:rgb(255, 255, 224);
+}
+
+.linguagensAprendidas h3{
+    font-family: cursive;
+}
+
+.linguagensAprendendo h3{
+    font-family: cursive;
+}
+
+/* Classe que mexe como bloco das Linguagens que já sei */
+.linguagensAprendidas{
+    margin-top: 20px;
+    margin-right: -200px;
+    margin-left: 195px;    
+}
+
+/*Classe que mexe com o bloco da área dos botões */
+.linguagem{
+    margin-top: 20px;    
+    margin-left: -263px;    
+    padding: 50px;
+}
+
+/* Classe que mexe com os botões especificamente */
+.linguagem button{
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #ffffff;
+    background: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.7);
+}
+
+.linguagem button span{
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0,0,0,.3);
+    font-size: 9pt;
+    line-height: 140px; /*Tô de olho aqui*/
+    padding: 3px;
+}
+
+.linguagem button:hover{
+    transform: scale(1.5);
+    transition: all .4 ease-in;
+}
+
+.linguagem button:hover span{
+    opacity: 1;
+}
+
+.linguagem button#java{
+    background: url('../midia/Java.png')no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+
+.linguagem button#java:hover{
+    background-position: 0px 0px;
+    background-size: 150px 150px;
+}
+
+.linguagem button#html{
+    background: url('../midia/html.png')no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+
+.linguagem button#html:hover{
+    background-position: 0px 0px;
+    background-size: 150px 150px;
+}
+
+.linguagem button#css{
+    background: url('../midia/css.png')no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+
+.linguagem button#css:hover{
+    background-position: 0px 0px;
+    background-size: 150px 150px;
+}
+
+
+
+/* Classe que mexe como bloco das Linguagens que estou aprendendo */
+.linguagensAprendendo{
+    margin-top: -300px;
+    margin-left: 730px;
+    width: 50%;
+}
+
+/* Classe que mexe com o bloco da área dos botões */
+.aprendendo{
+    margin-top: 70px;
+    margin-left: -80px;
+}
+
+/* Classe que mexe com os botões especificamente */
+.aprendendo button{
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #ffffff;
+    background: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.7);
+}
+
+.aprendendo button span{
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0,0,0,.3);
+    font-size: 9pt;
+    line-height: 140px; /*Tô de olho aqui*/
+    padding: 3px;
+}
+
+.aprendendo button:hover{
+    transform: scale(1.5);
+    transition: all .8 ease-in;
+}
+
+.aprendendo button:hover span{
+    opacity: 1;
+}
+
+.aprendendo button#javascript{
+    background: url('../midia/js.png')no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+
+.aprendendo button#javascript:hover{
+    background-position: 0px 0px;
+    background-size: 150px 150px;
+}
+
+.aprendendo button#bd{
+    background: url('../midia/sql.png')no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+
+.aprendendo button#bd:hover{
+    background-position: 0px 0px;
+    background-size: 150px 150px;
+}
+
+.aprendendo button#mobile{
+    background: url('../midia/kotlin.png')no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+
+.aprendendo button#mobile:hover{
+    background-position: 0px 0px;
+    background-size: 150px 150px;
+}
+/*--------------------- FIM DA ESTILIZAÇÃO DA SKILLS --------------------*/
+
+
+
+/*Classe Section p/ estilizar oq fica abaixo da Skills: Portfólio */
+section.portfolio{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    background-color: #FF4500;
+}
+
+.texto-portfolio{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.texto-portfolio h1{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 224);
+}
+
+.bloco1{
+    position: absolute;
+    bottom: 200px;
+    left: 150px;
+    width: 230px;
+    height: 150px;   
+    background-color: #131b31;;
+    border-radius: 10px;        
+}
+
+.bloco2{
+    position: absolute;
+    bottom: 200px;
+    left: 550px;
+    width: 230px;
+    height: 150px;   
+    background-color: #131b31;;
+    border-radius: 10px;
+}
+
+.bloco3{
+    position: absolute;
+    bottom: 200px;
+    left: 950px;
+    width: 230px;
+    height: 150px;   
+    background-color: #131b31;;
+    border-radius: 10px;        
+}
+
+.bloco1 a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(255, 234, 234);
+    margin-left: 55px;
+    margin-top: 115px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.bloco1 img{
+    margin-top: 10px;
+    margin-left: 65px;
+}
+
+.bloco2 a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(255, 234, 234);
+    margin-left: 15px;
+    margin-top: 115px;
+    cursor: pointer;
+}
+
+.bloco2 img{
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 65px;
+    border-radius: 5px;
+}
+
+.bloco3 a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(255, 234, 234);
+    margin-left: 35px;
+    margin-bottom: -115px;
+    margin-top: 10000px;    
+    cursor: pointer;
+}
+
+.bloco3 img{
+    margin-top: 13px;
+    margin-left: 65px;
+}
+
+/*--------------------- FIM DA ESTILIZAÇÃO DO PORTFÓLIO --------------------*/
+
+
+
+/*Classe Section p/ estilizar oq fica abaixo do Portfólio: Contatos */
+section.contatos{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    background-color: #223f8f;
+}
+
+.texto-contatos{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.texto-contatos h1{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(224, 255, 255);
+}
+
+.contatinhos{
+    margin-top: 50px;
+}
+
+.email{
+    text-align: center;
+}
+
+.mail{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    color: red;
+    background-color: #131b31;;
+    width: 150px;
+}
+
+.mail a{
+    color:rgb(255, 255, 224) ;
+}
+
+.whats{
+    text-align: center;
+    margin-top: 20px;
+}
+/*--------------------- FIM DA ESTILIZAÇÃO DOS CONTATOS --------------------*/
+
+
+
+/* Propriedades do Rodapé */
+footer{
+    background-color: rgb(236, 130, 8);       
+    position: relative;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    overflow-x: hidden;
+}
+
+/* Estiliza o parágrafo do Rodapé (que fica centralizado) */
+footer p{
+    text-align: center;
+    margin-top: -25px;     
+}
+
+/* Estiliza todo o Bloco da direita do Rodapé*/
+.cabeçalhoFooter{
+    text-align: right;
+    margin-right: 200px;    
+    margin-top: -45px;
+}
+
+.cabeçalhoFooter h2{
+    text-decoration: wheat;
+}
+
+/* Estiliza o Bloco dos ícones das redes sociais (na direita) */
+.midia{
+   margin-top: 15px; 
+   margin-right: 3px;
+}
+
+/* Separa os ícones entre si */
+.midia i{
+    margin-right: 10px;
+}
+
+/*Estiliza o primeiro bloco que fica a esquerda da div (no caso em que tem a primeira linha) */
+.show{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    max-width: 250px; /*Define a largura máxima que as palavras desse bloco ocupam */
+}
+
+/* Estiliza o título tag h4 (fica na esquerda da div) */
+.show h4{
+    text-decoration: solid;
+    font-weight: bolder;   
+}
+
+/* Estiliza o segundo bloco que fica a esquerda da div (embaixo da div 'show') */
+.enjoy{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 2px;
+    max-width: 250px;
+}
+
+/*Estiliza o 2º título tag h4 (fica na esquerda da div) */
+.enjoy h4{
+    text-decoration: solid;
+    font-weight: bolder;    
+}
